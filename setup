@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Description: Link dotfiles to home directory
+# Need to clone to home directory on linux server
+
+mkdir -p ~/.config
+
+ln -sf ~/config-dotfiles/bashrc ~/.bashrc
+ln -sf ~/config-dotfiles/vimrc ~/.vimrc
+ln -sf ~/config-dotfiles/starship.toml ~/.config/starship.toml
+
+echo "Dotfiles linked!"
